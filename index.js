@@ -36,7 +36,7 @@ function appendPatternDetails(patternlab) {
  *
  * */
 function onPatternIterate (patternlab, pattern) {
-  console.log('onPatternIterate');
+  
   if (pattern.relPath.indexOf('probably-not-needed') === -1 &&
     (pattern.relPath.indexOf('.mustache') !== -1 ||
       pattern.relPath.indexOf('.json') !== -1)) {
@@ -68,7 +68,7 @@ function updatePatternState(patternlab, pattern, newState){
 }
 
 function registerEvents (patternlab) {
-  console.log('Register Events');
+  
   // Emitted after patterns are iterated over to gather data about them. Right before Pattern Lab processes and renders patterns into HTML.
   patternlab.events.on('patternlab-pattern-iteration-end', appendPatternDetails);
   // Emitted after a pattern's template, HTML, and encoded HTML files are written to their output location
@@ -88,7 +88,7 @@ function getPluginFrontendConfig () {
 
 
 function pluginInit (patternlab) {
-  console.log('Init Plugin');
+  
   if (!patternlab) {
     console.error('patternlab object not provided to plugin-init');
     process.exit(1);
@@ -111,7 +111,6 @@ function pluginInit (patternlab) {
   }
   
   patternlab.plugins.push(pluginConfig);
-  
   
   registerEvents(patternlab);
   patternlab.config[pluginName] = true;
