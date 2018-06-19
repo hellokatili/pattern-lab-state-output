@@ -1,5 +1,5 @@
 {
-  "name": "pattern-lab-state-output",
+  "name": "plugin-node-pattern-lab-state-output",
   "version": "0.0.1",
   "description": "Creates additional JSON file in public directory with states and links for all patterns.",
   "author": {
