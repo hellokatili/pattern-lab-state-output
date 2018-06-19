@@ -1,4 +1,4 @@
-var pluginName = 'pattern-lab-state-output';
+var pluginName = 'plugin-node-pattern-lab-state-output';
 var path = require('path');
 var fs = require('fs-extra');
 var util = require('./src/util');
