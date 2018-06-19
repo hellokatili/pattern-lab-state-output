@@ -1,0 +1,26 @@
+{
+  "name": "pattern-lab-state-output",
+  "version": "0.0.1",
+  "description": "Creates additional JSON file in public directory with states and links for all patterns.",
+  "author": {
+    "name": "Katrin Klimat"
+  },
+  "homepage": "https://github.com/hellokatili/pattern-lab-state-output#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellokatili/pattern-lab-state-output.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hellokatili/pattern-lab-state-output/issues"
+  },
+  "scripts": {
+    "postinstall": "node ./postinstall.js"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  },
+  "bundleDependencies": false,
+  "deprecated": false
+}
