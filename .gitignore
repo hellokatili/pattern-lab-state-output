@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+/.gitignore
+/plugin-node-pattern-lab-state-output.iml
+/.idea/
