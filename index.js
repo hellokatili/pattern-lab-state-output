@@ -36,9 +36,10 @@ function appendPatternDetails(patternlab) {
  *
  * */
 function onPatternIterate (patternlab, pattern) {
-  
+  var patternExtension = patternlab.config.patternExtension;
+
   if (pattern.relPath.indexOf('probably-not-needed') === -1 &&
-    (pattern.relPath.indexOf('.mustache') !== -1 ||
+    (pattern.relPath.indexOf('.' + patternExtension ) !== -1 ||
       pattern.relPath.indexOf('.json') !== -1)) {
     
     // lineageState or patternState or 'inprogress' (first in state cascade) as fallback if nothing is defined
